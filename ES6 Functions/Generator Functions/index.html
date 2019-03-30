@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   /*  function *a(){
+        yield 10;
+        yield 11;
+        let a = yield
+        console.log(a)
+    }
+    let r = a()
+    console.log(r)
+    console.log(r.next())
+    console.log(r.next())
+    console.log(r)
+    console.log(r.next()) */
+    
+    /* var a = [1,2,3,4,5,6,7,8,9,10]
+
+    function* gg(arr){
+        yield arr[0];
+        yield arr[5];
+        yield arr[8];
+    }
+    let ab = gg(a)
+    console.log(ab)
+    console.log(ab.next())
+    console.log(ab.next())
+    console.log(ab.next())
+    console.log(ab.next()) */
+   /*  var myGen = function* (){
+        var one = yield 1;
+        var two = yield 2;
+        var three = yield 3;
+        console.log(one, two, three);
+    }
+    var gen = myGen();
+    console.log(gen);
+    console.log(gen.next("Hey"))
+    console.log(gen.next("misbah"))
+    console.log(gen.next("aslam"))
+    console.log(gen.next("sabrani")); */
+
+   /*  var pro = function*(){
+        yield setTimeout(() => {
+            console.log("Misbah here")
+        }, 1000);
+        yield setTimeout(() => {
+            console.log( "Aslam");
+        }, 1000);
+    }
+    var prom = pro();
+    console.log(prom.next())
+    console.log(prom.next())
+    console.log(prom.next()) */
+
+ /* function* infinityLoops(i){
+while(i <= 10){
+    yield i;
+    i++;
+}
+ }
+
+ var r = infinityLoops(0);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value);
+ console.log(r.next().value); */
+
+ /* var frog = function*(){
+     for(var i = 0 ; i < 11; i++){
+         if(i === 5 || i === 10){
+             yield i;
+         }
+     }
+ }
+var fr = frog();
+console.log(fr.next().value);
+console.log(fr.next().value);
+console.log(fr.next().value); */
+
+
+/* var row = function*(){
+    
+        yield 
+    
+}
+var r = row()
+console.log(r.next())
+console.log(r.next())
+console.log(r.next()) */
+//imp
+/* function* myGen(){
+    yield 1;
+    yield* myGen2();
+    yield 3;
+}
+
+function *myGen2(){
+    yield 44;
+}
+var g = myGen();
+console.log(g.next())
+console.log(g.next())
+console.log(g.next())
+console.log(g.next())
+console.log(g.next())
+console.log(g.next()) */
+//imp
+//Nested generators
+/* function* full(){
+    yield "full";
+    yield "full";
+    yield * full2();
+    yield "full"
+    return "Iam going out from full";
+    yield 3;
+    yield 4;
+
+}
+ var full2 = function* (){
+    yield "full2" 
+    yield "full2"
+    yield* full3();
+    yield "full2"
+    
+};
+
+function* full3(){
+    yield "full3"
+    yield "full3"
+}
+ var check = full();
+ var check2 = full2();
+ console.log(check.next()) //full
+ console.log(check.next()) //full
+
+ console.log(check.next()) //full2
+ console.log(check.next()) //full2
+
+ console.log(check.next()) //full3
+ console.log(check.next()) //full3
+
+ console.log(check.next()) //full2
+ 
+ console.log(check.next()) //full
+ console.log(check.next()) //I am going out from full and true */
+  
+
+ /* function* genPromise(url){
+     yield fetch(url + "mtahir08").then(res => res.json());
+     yield fetch(url + "MohammadArsalan").then(res => res.json());
+     yield fetch(url + "daniyalnagori").then(res => res.json());
+     yield fetch(url + "misbahaslamsabrani").then(res => res.json());
+ }
+ var g = genPromise("https://api.github.com/users/");
+ g.next().value.then(data => console.log(data)).catch(err => console.log(err))
+ g.next().value.then(data => console.log(data)).catch(err => console.log(err))
+ g.next().value.then(data => console.log(data)).catch(err => console.log(err))
+ g.next().value.then(data => console.log(data)).catch(err => console.log(err)) */
+
+
+ function* gen(){
+     yield "pear";
+     yield "orange";
+     yield "apple";
+     console.log("fruits")
+ }
+ var myGen = gen();
+ console.log(myGen.next())
+ console.log(myGen.next())
+ console.log(myGen.next())
+ console.log(myGen.next())
+    </script>
+</body>
+</html>

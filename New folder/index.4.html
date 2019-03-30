@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //NO CLASSES, PROMISES, GENERATOR FUNCTIONS, NOT A SINGLE ARRAY METHOD,
+        //NO FETCH API, NO SYMBOL/SET/ITTERATOR/NO FOR IN/OF LOOP
+        //YES FOR LOOPS/ DO,WHILE LOOP
+        //YES CONDITIONS
+        //ARRAY AND ARRAY PROTOTYPE
+/* //17
+myVar = "Hello World"
+console.log(myVar)
+//18
+"use strict"
+myVar = "Hello World"
+console.log(myVar)
+//19
+console.log(myVar)
+myVar = "Hello World"
+//20
+const pi = 3.14
+pi = 24
+console.log(pi)
+//21
+var a = "hello World";
+var a = "Hello Pakistan";
+console.log(a)
+//22
+let b = 1;
+let b = 2;
+console.log(b);
+//23
+let a = 1;
+{
+    {
+        console.log(a)
+        let b = 10;
+    }
+    {
+        console.log(b);
+        console.log(a);
+    }
+} */
+//24
+/* let obj1 = {name: "rehan", address:{city: "karachi", area: "yaadnai"}}
+let obj2 = obj1
+obj2.address = {city: "karachi", area: "johar"}
+let obj3 = obj2
+obj3.address.area = "Gulshan"
+console.log(obj1.address.area,obj2.address.area,obj3.address.area) */
+//25
+/* let obj1 = {name: "rehan", city: "karachi"}
+let obj2 = obj1
+obj2.name = "Tauha";
+let obj3 = obj2;
+obj3.name = "Zeeshan";
+console.log(obj1.name, obj2.name, obj3.name); */
+
+        //1
+   /*  for(var i = 1; i<=8; i+=1){
+        if(i%2 != 0){
+            i++;
+        }
+        console.log(i)
+    } */
+//2,3
+   /*  Array.prototype.mul = function(num){
+        for(var i = 0; i< this.length; i++){
+            this[i] *=num;
+        }
+        return this.map(x => x *num)
+    }
+    var arr = [0,1,2,3];
+    var newArr = arr.mul(2)
+    console.log(newArr) */
+//4
+    /* function a(arr){
+    var len = arr.length; i = len -1;
+    if(len <= i){
+        //i don't remember
+    }
+    else{
+        do{
+            console.log(arr[i])
+        }while(--i >=0)
+    }
+    }
+    a([3,2,1])
+    a([1,2,3]) */
+//5
+    /* for(var i = 10; i <= 1000; i*=10){
+        console.log(i)
+    } */
+
+//6,7
+    /* function memorize(a){
+        return function(b){
+            return(a+b);
+        }
+    }
+    var m1 = memorize(2)
+    var m2 = memorize(3)
+    var m3 = memorize(4)
+    console.log(m1(2))
+    console.log(m2(2))
+    console.log(m3(2))
+    console.log(m3(4)) */
+//8
+   /*  var arr = [1,13,5,7,9,111]
+        for(var i = 0; i < arr.length; i++){
+         for(var j = 0; j <= i; j++){
+                var temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp
+            }
+        }
+        console.log(arr) */
+//9,10
+        /* var a = [1,13,5,7,9,111]
+        for(var i = 0; i < a.length; i++){
+            a[i]++;
+            if(i%2 != 0){
+                a[i]--
+            }
+        }
+        console.log(a)
+        a[i]++
+        a[i]-- */
+//11,12
+        /* function recursive(arr,index){
+            if(arr){
+                 var values = arr[index]
+            index++;
+            console.log(arr[index])
+            recursive(arr, index) 
+            }
+        }
+        var arr = [1,2,3,4,5,6];
+        recursive(arr, 0)
+        */
+//13
+     /*   function a(first = "old", second = function(){
+           return first
+       }){
+           var first = "new"
+           console.log(first);
+           console.log(second())
+       }
+       a() */
+
+       
+/* //14,15
+    function a(condition){
+        console.log(shape)
+        if(condition){
+            console.log(condition);
+            var shape = "square";
+            return shape;
+        }
+        else{
+            console.log(condition);
+        }
+    }
+    a(true)
+    a(false)
+
+//16
+    function b(condition){
+        console.log(condition)
+        if(condition){
+            var shape = "square";
+            console.log(shape)
+        }
+        else{
+            var shape = "circle";
+            console.log(shape)
+        }
+    }
+    b(1 > 1);
+    b(false)
+    b(true) */
+    </script>
+</body>
+</html>

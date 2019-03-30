@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //---------------------1
+        /* //alert(b)
+        
+        const b = 1;
+         let c = 20;
+           // b = 2;
+         if(true) {
+             alert(c);
+            const a = 10;
+        }
+        const a = 10;
+         alert(a); */
+        //--------------------2 wrong ans
+        /* var i = 0;
+        var y = 1;
+        var z = 1;
+        for(var x = 1;y++;z++){
+           console.log(x, y, z, i);
+             if(i > 10){
+                break;
+             }
+             i++;
+        }  */
+        //----------------------3
+        // for
+        // while
+        // do while
+        // for in
+        // for of //// ye konsa hai?
+         var a = [1,2,3];
+         a.forEach((v) => {
+             console.log(v)
+         })
+        //---------------------4
+        /* var arr = [
+            {name: "a", age: 10},
+            {name: "b", age: 100, class: "abc"},
+            {name: "c", age: 30, subject: "xyz"},
+        ];
+         console.log(arr[1].name)
+        for(let i =0; i < arr.length; i++){
+            console.log(arr[i].name);
+            for(let key in arr[i]){
+                console.log(i, key, arr[i][key] );
+            }
+        } */
+        //------------------------5
+         // var a = 
+        // string
+        // number
+        // boolean
+        // undefined
+        // null
+        // NaN
+        // object
+        // Array
+        // function
+        var b = NaN
+        //console.log(b)
+        //--------------------6
+        /* var arr1 = [
+            1,
+         "pak",
+          function(){}, 
+          [1,2,3,1, "pak", function(){console.log("abc");}], 
+          {name: "abc"} ];
+        arr1[3][5]();
+
+        //p1:
+        var b = ["misbah", function(){console.log(this[0])}] 
+        b[1]()
+        //p2:
+        var c = ["misbah", "aslam", {name: this[0], fname: this}, function(){
+            console.log(this[2])
+        }]
+        c[3]()
+        //p3
+        var d = [1, function(num){
+            console.log(num)
+            console.log(this[0] + num)
+        }]
+        d[1]();
+        //p4 -------------learn spread method
+         function sun(...num){
+            console.log(num)
+            console.log(2 +num)
+        }
+        var a = [1,1,1,1]
+        sun(a) 
+         */
+         //-----------------7
+        /* var obj = {
+            a: 1, 
+            b: 2
+         };
+        for(let key in obj){
+        console.log( key ,  obj[ key ] );
+        } */
+        //----------------8 can't understand this
+         /* class A {
+           int age = 5
+        }
+        A a = new A();
+        a.age */
+
+    </script>
+</body>
+</html>

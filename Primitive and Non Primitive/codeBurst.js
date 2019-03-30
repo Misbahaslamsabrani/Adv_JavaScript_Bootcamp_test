@@ -1,0 +1,11 @@
+var a = "misbah"
+console.log(typeof(a))
+console.log(a)
+console.log(a[0])
+console.log(a.length)
+var num = new Number(2)
+console.log(num)
+var string = new String("abc")
+console.log(string)
+var boo = new Boolean()
+console.log(boo)

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="of loop vs in loop.js"></script> -->
+    <!-- <script src="Template String.js"></script> -->
+    <!-- <script src="spread operator.js"></script> -->
+    <!-- <script src="pri and nonpri.js"></script> -->
+    <script>
+    /* var r = () => 
+    console.log("poooop"); 
+    
+    //r()
+    function a(){
+    console.log(typeof(arguments))
+    }
+    a();
+
+    var f = function g(){ return 23; };
+  //console.log(typeof g());
+
+  function c(val){
+      return {blue: "p", green: "ppp"}[val]
+  }
+  console.log(c(9)) */
+
+  /* var max_value = function(array) {
+  var result = array[0];
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] > result) {
+      result = array[i];
+    };
+  }
+  return result;
+}
+console.log(max_value([1, 50, 2])); 
+var a = 9;
+function aa(name){
+    console.log(typeof(name) + a)
+}
+aa(40) */
+
+/* function min_Value(a){
+    var b = a.sort((a,b) => { return a-b;
+    })
+    console.log(b)
+    var c = b.slice(0, 1);
+    return c;
+}
+console.log(min_Value([25,42,13,11,2,0])) */
+
+/* function add_number(a){
+    if(isNaN(a)){
+        throw a + " is not a number";
+    }
+    else {
+        return a + 2;
+    }
+}
+
+console.log(add_number(4))
+console.log(add_number('pp')) */
+
+
+
+/* const array = [1, 2, 3]
+const extension = [4, 5, 6]
+
+array = [...extension, ...array]
+console.log(array) */
+
+
+/* var r = [2,4,6].map(x => x* x);
+console.log(r) */
+
+/* var a = [];
+a.push(undefined,null, NaN, true, false)
+console.log(a, a.length) */
+var r = [];
+/* r.splice(4, 2)
+console.log(r) */
+var h = r.findIndex((v) => {
+        return v == 0;
+})
+//console.log(h)
+
+//Muskurata rehta hoon, Duniya se yeh kehta hoon 
+//Mil jaenge mujhko khawab bhi
+//Dil ko zinda rakhta hoon, khushiyan se ye bharta hoon
+//itna toh hai yakeen
+//Urta howa tara hoon
+//ooncha sa ek naara hoon
+//var a = 8;
+//var b = 0 //a-- + --a;
+//b = --a + a--;
+//console.log(b);
+//var g = [0,1,2,3,4,4]
+//alert(...g)
+/* console.log(...g)
+function yyy(){
+    "use strict"
+    var let = "misbah";
+}
+yyy() */
+/* var a = "";
+if(a === ""){
+    console.log("")
+}
+else{
+    console.log("false")
+}
+ */
+/*  console.log(typeof(later))
+ var later = function(){}
+ var r = "test";
+ {
+     console.log(r)
+     if(false){
+         var r = "test2";
+     }
+     var r = "test3"
+ } */
+
+
+/* if(true){
+    console.log(p999)
+    var p999 = "ppp"
+} */
+/* var a = 5;
+if(true){
+    console.log(a);
+    var a = 75;
+}
+console.log(a) */
+
+/* function a(a= 3, b = 0){
+    console.log(a,b)
+}
+a("", null) */
+/* console.log([] + [] + "foo".split(" ")) */
+
+/* var a = ["misbah", "aslam", "sabrani"]
+ for(let key in a){
+    console.log(key+1)
+} 
+console.log("2" in a);
+console.log("3" in a) */
+
+/* var arr = [];
+arr[0] = "a";
+arr[1] = "b";
+arr.foo = "c";
+console.log(arr.length) */
+
+/* function foo(a,b){
+    arguments[1] = 2;
+    console.log(arguments)
+    alert(b);
+}
+foo(1) */
+/* function hunt(){
+    var a = 7;
+    console.log(a);
+    return (b) => {
+        console.log(a);
+        console.log(a + b);
+    }
+}
+var f = hunt();
+f(5) */
+
+/* //console.log(b) error
+let b = 5;
+function a(){
+    //console.log(b) error
+    let b = 0;
+    if(true){
+        //console.log(b) error
+        let b = 7
+    }
+}
+a() */
+/* console.log(a);
+var a = 5;
+function b(){
+    console.log(a)
+    var a = 0;
+    if(true){
+        console.log(a)
+        var a = 9;
+    }
+}
+b() */
+/* function a(a,b){ console.log(a + b)}
+setTimeout(a, 1000, 5,6); */
+
+/* function test(cb,a){
+    setTimeout(() => {
+        if(a == 7)cb("hey")
+        else throw "defeat";
+    }, 2000)
+}
+test((a) => console.log(a), 5) */
+/* console.log("bye");console.log("bye");console.log("bye");console.log("bye"); */
+/* setTimeout(() => {
+    console.log("Iam always late")
+})
+console.log("Iam first")
+for(var i = 2; i <=2; i++){
+    console.l("i am second")
+}
+console.log("Iam third") */
+/* console.log("bye")
+console.log("bye")
+console.log("bye")
+console.log("bye") */
+/* var counter = 0;
+var a = setInterval(() => {
+    console.log("async" + counter)
+    counter+=1;
+    if(counter >=5){
+        clearInterval(a)
+    }
+},1000) */
+
+/* var myPromise = new Promise((resolve,reject) => {
+    setTimeout(() => {
+        reject("errrrror");
+    },1000)
+    setTimeout(() => {
+        resolve("hey");
+    },)
+    
+})
+myPromise
+.then((d) => console.log(d))
+.catch((err) => console.error(err)) */
+
+/* function test(data){
+    return new Promise((resolve, reject) => {
+        if(isNaN(data)){
+            reject("error");
+        }
+        else if(data%2 === 1){
+            setTimeout(() => resolve("odd"),1000)
+        }
+        else if(data%2 === 0){
+            setTimeout(() => reject("even"), 2000)
+        }
+    })
+}
+var promise = test("test");
+promise.then(d => console.log(d), err => console.error(err)); */
+
+
+/* console.log(isNaN(null)); //false
+console.log(isNaN(null) === false); //true
+console.log(Number(null))
+console.log(null == false)
+console.log(isNaN(undefined))
+console.log(Number(undefined)) */
+
+/* var v = new Promise((resolve, reject) => {
+    resolve("hey")
+})
+v.then((d) => {console.log(d); }).catch((r) => console.log(r)) */
+
+/* function t(){
+    var promise = new Promise((res, rej) => {
+        res("hey")
+    }).then((data) => {return data})
+    return promise;
+}
+
+var s = t();
+s.then(d => console.log(d)) */
+/* var r = new Promise((res, rej) => { res()})
+console.log(r)
+console.log(r.then)
+console.log(r.then()) */
+
+/* console.log(Promise.resolve(33))
+var a = Promise.resolve(42);
+a.then(a => console.time()) */
+
+/* function job(state){
+    return new Promise((resolve, reject) => {
+        if(state){
+            resolve("sccuess");
+        }
+        else {
+            reject("error");
+        }
+    })
+}
+let promise = job(true)
+promise
+.then((d) => {console.log(d); return job(false)})
+.catch((d) => {console.log(d); return "Error Caught"})
+.then((d) => {console.log(d); return job(false)})
+.catch((d) => {console.log(d);})
+// .then((d) => {console.log(d);})  */
+
+/*  function j(data, time, a){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if(a === "yes")
+            resolve(data + time);
+            else
+            reject(data + time)
+        }, time)
+    })
+}
+var jon = Promise.race([
+j("I am one", 1000, "yes"),
+j("I am two", 2000, "yes"),
+j("I am third", 500, "No"),
+j("I am four", 1500, "yes"),
+])
+jon.then(data => console.log(data)); */
+/* 
+var a = "misbah"
+console.log(a.charAt(10)) */
+/* function job(delay) {
+    return new Promise(function(resolve) {
+        setTimeout(function() {
+            resolve('done ' + delay);
+        }, delay);
+    });
+}
+var promise = Promise.all([job(1000), job(2000), job(500), job(1500)]);
+promise.then((data) => console.log(data)) */
+/* var pro = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(5);
+    },2000)
+})
+pro
+.then((d) => {console.log(d); return d;})
+.then((d) => {console.log(d-1); return d-1;})
+.then((d) => {console.log(d-1); return d-1;})
+.then((d) => {console.log(d-1); return d-1;})
+.then((d) => {console.log(d-1); return d-1;})
+.then((d) => {console.log(d-1); throw d-1;})
+.catch((err) => console.error(err-1)); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
